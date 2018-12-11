@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "android": "react-native run-android",
-    "first-build": "touch android/local.properties; echo \"sdk.dir=/home/musta/Android/Sdk\" >> android/local.properties;",
+    "first-build": "react-native upgrade; react-native link;touch android/local.properties; echo \"sdk.dir=/home/musta/Android/Sdk\" >> android/local.properties;",
     "test": "jest"
   },
   "dependencies": {
